@@ -5,10 +5,11 @@ public class P_1342_Number_of_Steps_to_Reduce_a_Number_to_Zero {
 		int count = 0;
 		while (num != 0) {
 			count++;
+            if(num==1)
+                break;
 			if ((num & 1) == 1)
-				num -= 1;
-			else
-				num >>= 1;
+				count++;
+			num >>= 1;
 		}
 		return count;
 	}

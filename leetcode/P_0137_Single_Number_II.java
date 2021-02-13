@@ -9,7 +9,7 @@ import java.util.Map;
 //Find that single one.
 
 class P_0137_Single_Number_II {
-	public int singleNumberHashMapSolution(int[] nums) {
+	public int singleNumber(int[] nums) {
 		Map<Integer, Integer> hmap = new HashMap<Integer, Integer>();
 
 		for (int i = 0; i < nums.length; i++) {
@@ -25,7 +25,7 @@ class P_0137_Single_Number_II {
 	public static void main(String[] args) {
 		P_0137_Single_Number_II handler = new P_0137_Single_Number_II();
 		int[] nums = new int[] { 6, 6, 6, 3, 1, 1, 1, 2, 2, 2 };
-		int res = handler.singleNumberHashMapSolution(nums);
+		int res = handler.singleNumber(nums);
 		System.out.println(Arrays.toString(nums));
 		System.out.println(res);
 	}

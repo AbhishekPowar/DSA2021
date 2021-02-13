@@ -1,14 +1,11 @@
 package leetcode;
 
-import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Set;
-
+//Not orignal Solution. Need some more work on Matrix problems
 public class P_1091_Shortest_Path_in_Binary_Matrix {
-
+	
 	public int shortestPathBinaryMatrix(int[][] grid) {
 		int gridLen = grid.length;
 		if (grid[0][0] == 1 || grid[gridLen - 1][gridLen - 1] == 1) {

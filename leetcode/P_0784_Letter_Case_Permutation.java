@@ -10,10 +10,9 @@ import java.util.List;
 //Return a list of all possible strings we could create.
 //You can return the output in any order.
 
-
 public class P_0784_Letter_Case_Permutation {
-	// Slower than solution 1 
-	//Needs some optimisation TC:  O(2^n) but n = number of characters
+	// Slower than solution 1
+	// Needs some optimisation TC: O(2^n) but n = number of characters
 	public List<String> letterCasePermutation2(String S) {
 		List<String> res = new ArrayList<String>();
 		char[] s = S.toCharArray();
@@ -60,7 +59,8 @@ public class P_0784_Letter_Case_Permutation {
 		permute(s, 0, res);
 		return res;
 	}
-	//TC : O(2^n)
+
+	// TC : O(2^n)
 	public void permute(char[] s, int idx, List<String> res) {
 		if (idx < s.length) {
 			permute(s, idx + 1, res);

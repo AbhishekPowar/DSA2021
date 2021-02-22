@@ -35,13 +35,13 @@ public class P_0013_Roman_to_Integer {
 
 	public static void main(String[] args) {
 		P_0013_Roman_to_Integer handler = new P_0013_Roman_to_Integer();
-		List<String> input = new ArrayList<String>(Arrays.asList("III","IX","XV"));
-		List<Integer> output = new ArrayList<Integer>(Arrays.asList(3,9,15));
-		
+		List<String> input = new ArrayList<String>(Arrays.asList("III", "IX", "XV"));
+		List<Integer> output = new ArrayList<Integer>(Arrays.asList(3, 9, 15));
+
 		for (int i = 0; i < input.size(); i++) {
-			System.out.println("Input : "+input.get(i));
-			System.out.println("Output : "+handler.romanToInt(input.get(i)));
-			System.out.println("Exp Output : "+output.get(i));
+			System.out.println("Input : " + input.get(i));
+			System.out.println("Output : " + handler.romanToInt(input.get(i)));
+			System.out.println("Exp Output : " + output.get(i));
 		}
 	}
 

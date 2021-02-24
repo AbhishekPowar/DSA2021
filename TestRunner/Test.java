@@ -21,15 +21,15 @@ public class Test {
 		for (int i = 0; i < input.inArgs.size(); i++) {
 			try {
 				Object ans = func.invoke(obj.newInstance(), input.getAsObjectArray(i));
-				boolean pass = ans.equals(expectedOutput.outArgs.get(i));
+				boolean pass = expectedOutput.printData(ans).equals(expectedOutput.print(i));
 				if (pass) {
 					passCount++;
 				}
 				// If not minimal or test case fails
 				if (!minimal || !pass) {
 					System.out.print("Input :" + input.print(i));
-					System.out.println("Expected Output : " + expectedOutput.outArgs.get(i));
-					System.out.println("Output : " + ans);
+					System.out.println("Expected Output : " + expectedOutput.print(i));
+					System.out.println("Output : " + expectedOutput.printData(ans));
 					System.out.println("Testcase " + (pass ? "Passed" : "Failed"));
 					System.out.println("-------------------------------------");
 				}

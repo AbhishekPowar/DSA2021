@@ -30,7 +30,7 @@ public class Test {
 					System.out.print("Input :" + input.print(i));
 					System.out.println("Expected Output : " + expectedOutput.print(i));
 					System.out.println("Output : " + expectedOutput.printData(ans));
-					System.out.println("Testcase " + (pass ? "Passed" : "Failed"));
+					System.out.println("Testcase " + (pass ? "Passed ✓" : "Failed X"));
 					System.out.println("-------------------------------------");
 				}
 			} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException

@@ -22,15 +22,14 @@ public class P_0856_Score_of_Parentheses {
 				}
 				if (curSum == 0) {
 					curSum = 1;
-				}
-				 else if(curSum>0)
-					 curSum <<= 1;
+				} else if (curSum > 0)
+					curSum <<= 1;
 				stk.removeLast();
 				stk.addLast(curSum.toString());
 
 			}
 		}
-	
+
 		while (stk.isEmpty() == false) {
 			res += Integer.parseInt(stk.removeFirst());
 		}
@@ -48,7 +47,7 @@ public class P_0856_Score_of_Parentheses {
 		} else {
 			Input input = Input.getInstance();
 			Output<Integer> expOutput = Output.getInstance();
-			Test.minimal=false;
+			Test.minimal = false;
 			input.add("()");
 			expOutput.add(1);
 			input.add("()()");

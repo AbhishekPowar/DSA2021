@@ -70,8 +70,7 @@ public class Input {
 		if (o.getClass() == int[].class) {
 			return Arrays.toString((int[]) o);
 		}
-	
-		
+
 		return "error";
 	}
 }

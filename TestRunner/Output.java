@@ -22,18 +22,19 @@ public class Output<T> {
 	}
 
 	public String print(int i) {
-		
+
 		StringBuilder sb = new StringBuilder("");
 		Object obj = this.outArgs.get(i);
-		
+
 		if (obj.getClass().isArray()) {
 			sb.append(printArray(obj));
 		} else {
 			sb.append(obj.toString());
 		}
-		
+
 		return sb.toString();
 	}
+
 	public String printData(Object i) {
 
 		StringBuilder sb = new StringBuilder("");

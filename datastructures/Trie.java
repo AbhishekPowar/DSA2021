@@ -1,6 +1,8 @@
+package datastructures;
+
 import java.util.ArrayList;
 
-class Trie {
+public class Trie {
 	Trie[] t;
 	ArrayList<Integer> indexList;
 

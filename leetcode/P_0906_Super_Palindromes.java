@@ -53,7 +53,7 @@ public class P_0906_Super_Palindromes {
 		String left = "40000000000000000";
 		String right = "50000000000000000";
 
-		System.out.println("Super Palindrom count " + handler.superpalindromesInRange(left, right));
+		System.out.println("Super Palindrome count " + handler.superpalindromesInRange(left, right));
 
 	}
 

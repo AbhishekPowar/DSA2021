@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P_1423_Maximum_Points_You_Can_Obtain_from_Cards {
 
     public int maxScore(int[] cardPoints, int k) {
